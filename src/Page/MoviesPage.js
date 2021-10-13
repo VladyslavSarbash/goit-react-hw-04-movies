@@ -48,7 +48,7 @@ export default function MoviesPage() {
           {search.map(i => {
             return (
               <li key={i.id}>
-                <Link to={`movies/${i.id}`}>{i.title} </Link>
+                <Link to={`/movies/${i.id}`}>{i.title} </Link>
               </li>
             );
           })}

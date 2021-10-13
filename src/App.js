@@ -25,10 +25,8 @@ const App = () => {
         {/*Если навигацию переместить на уровень выше, то ломается код(в Suspence не видит fallback)*/}
         <Navigation />
         <Switch>
-          <Route exact path={`/`}>
-            <HomePage />
-          </Route>
-          <Route path={`/movies/:movieId`} component={MovieDetails}></Route>
+          <Route exact path={`/`} component={HomePage} />
+          <Route path={`/movies/:movieId`} component={MovieDetails} />
           <Route path={`/movies`} component={MoviesPage} />
           <Route component={NotFound} />
         </Switch>
