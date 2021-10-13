@@ -44,7 +44,7 @@ export default function MoviesPage() {
         <button type="submit">Search</button>
       </form>
       {search && (
-        <ul>
+        <ol>
           {search.map(i => {
             return (
               <li key={i.id}>
@@ -52,7 +52,7 @@ export default function MoviesPage() {
               </li>
             );
           })}
-        </ul>
+        </ol>
       )}
     </div>
   );

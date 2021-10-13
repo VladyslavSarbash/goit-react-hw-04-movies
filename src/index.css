@@ -12,8 +12,12 @@ button {
   color: blue;
 }
 
-.list-item_movies {
-  margin-bottom: 10px;
+a {
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 .details {

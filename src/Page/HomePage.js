@@ -14,7 +14,7 @@ export default function HomePage() {
     movies && (
       <>
         <h1>Trending today</h1>
-        <ul>
+        <ol>
           {movies.map(el => {
             return (
               <li className="list-item_movies" key={el.id}>
@@ -22,7 +22,7 @@ export default function HomePage() {
               </li>
             );
           })}
-        </ul>
+        </ol>
       </>
     )
   );
