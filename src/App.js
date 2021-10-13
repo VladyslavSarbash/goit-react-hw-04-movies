@@ -18,7 +18,7 @@ const NotFound = lazy(() =>
   import('./components/NotFound/NotFound' /* webpackChunkName: "NotFound" */),
 );
 
-const BASE_URL = 'react-config-hw';
+const BASE_URL = 'goit-react-hw-04-movies';
 
 const App = () => {
   return (
