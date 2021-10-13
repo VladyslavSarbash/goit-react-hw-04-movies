@@ -1,0 +1,33 @@
+button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: black;
+  margin-left: 20px;
+}
+
+.active_nav-link {
+  color: blue;
+}
+
+.list-item_movies {
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+}
+
+.details-genre {
+  display: flex;
+}
+
+.details-genre_paragraph {
+  margin-left: 10px;
+}
+
+.details-info {
+  margin-left: 20px;
+}

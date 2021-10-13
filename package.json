@@ -1,8 +1,8 @@
 {
-  "name": "react-config-hw",
+  "name": "goit-react-hw-04-movies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://VladyslavSarbash.github.io/react-config-hw",
+  "homepage": "https://VladyslavSarbash.github.io/goit-react-hw-04-movies",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
