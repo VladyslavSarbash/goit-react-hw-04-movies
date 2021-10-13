@@ -11,7 +11,7 @@ const Reviews = lazy(() =>
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w400';
 
-export default function MovieDetails({ match, history }) {
+export default function MovieDetails({ match, history, location }) {
   const [details, setDetails] = useState(null);
   const { movieId } = useParams();
 
@@ -22,12 +22,14 @@ export default function MovieDetails({ match, history }) {
   }, [movieId]);
 
   const goBack = () => {
-    history.goBack();
+    history.push(location?.state?.from ?? '/');
   };
 
   return (
     <>
-      <button onClick={goBack}>Go back</button>
+      <button type="button" onClick={goBack}>
+        Go back
+      </button>
       {details && (
         <div className="details">
           {details.backdrop_path ? (

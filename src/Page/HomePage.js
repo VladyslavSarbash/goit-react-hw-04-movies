@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FetchApi } from '../components/Api/Api';
 
-export default function HomePage() {
+export default function HomePage({ location }) {
   const [movies, setMovies] = useState(null);
   useEffect(() => {
     FetchApi().then(data => {
@@ -18,7 +18,14 @@ export default function HomePage() {
           {movies.map(el => {
             return (
               <li className="list-item_movies" key={el.id}>
-                <Link to={`/movies/${el.id}`}>{el.title} </Link>
+                <Link
+                  to={{
+                    pathname: `/movies/${el.id}`,
+                    state: { from: location },
+                  }}
+                >
+                  {el.title}{' '}
+                </Link>
               </li>
             );
           })}
