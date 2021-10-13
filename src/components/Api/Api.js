@@ -2,7 +2,7 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 const KEY_API = 'e833adf501cf688f3d015142b79326d1';
 
 function FetchApi() {
-  return fetch(`${BASE_URL}/trending/movie/week?api_key=${KEY_API}`).then(
+  return fetch(`${BASE_URL}/trending/movie/day?api_key=${KEY_API}`).then(
     response => response.json(),
   );
 }
